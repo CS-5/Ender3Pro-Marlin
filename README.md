@@ -1,3 +1,7 @@
+# Ender3Pro-Marlin (Actual Readme below) 
+TLDR: I needed a place to keep my modifications, this is it. Modifications made mostly following this guide, but lots of Googling was involved. 99.9% change this will not work on your printer without modification.
+
+
 # Marlin 3D Printer Firmware
 
 ![GitHub](https://img.shields.io/github/license/marlinfirmware/marlin.svg)
