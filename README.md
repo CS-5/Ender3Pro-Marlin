@@ -1,5 +1,5 @@
 # Ender3Pro-Marlin (Actual Readme below) 
-TLDR: I needed a place to keep my modifications, this is it. Modifications made mostly following [his guide](https://www.reddit.com/r/3Dprinting/comments/n7ix1c/marlin_20x_guide_skr_mini_e3_v12_ender_3/), but lots of Googling was involved. 99.9% change this will not work on your printer without modification.
+TLDR: I needed a place to keep my modifications, this is it. Modifications made mostly following [this guide](https://www.reddit.com/r/3Dprinting/comments/n7ix1c/marlin_20x_guide_skr_mini_e3_v12_ender_3/), but lots of Googling was involved. 99.9% change this will not work on your printer without modification.
 
 
 # Marlin 3D Printer Firmware
