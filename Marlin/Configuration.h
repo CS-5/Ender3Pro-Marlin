@@ -1048,7 +1048,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -1.410 }
+#define NOZZLE_TO_PROBE_OFFSET { -42, -10, -1.56 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1226,8 +1226,8 @@
 
 // The size of the printable area
 // TODO: Configure this properly, following https://manuelmclure.github.io/ConfiguringLeveling.html
-#define X_BED_SIZE 235
-#define Y_BED_SIZE 235
+#define X_BED_SIZE 0
+#define Y_BED_SIZE 0
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
