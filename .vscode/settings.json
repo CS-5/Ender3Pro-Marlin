@@ -1,0 +1,6 @@
+{
+  "todo-tree.highlights.useColourScheme": true,
+  "files.associations": {
+    "*.old": "cpp"
+  }
+}
