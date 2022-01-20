@@ -2,8 +2,8 @@ name: Build Lab Ender 3 Firmware
 
 on:
   push:
-    tags:
-      - "*"
+    branches:
+      - main
 
 jobs:
   build_and_push:
@@ -25,7 +25,7 @@ jobs:
           docker run \
             -u root:root \
             -e BOARD \
-            -e ${{ steps.version.outputs.VERSION }}
+            -e USE_LATEST=true \
             -v $(pwd)/.pio/build:/home/platformio/build \
             -v $(pwd)/Marlin:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
