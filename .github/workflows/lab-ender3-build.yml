@@ -1,4 +1,4 @@
-name: Build Ender3 Pro Firmware
+name: Build Lab Ender 3 Firmware
 
 on:
   push:
