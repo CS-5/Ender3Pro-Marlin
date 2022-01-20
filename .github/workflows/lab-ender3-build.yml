@@ -1,0 +1,38 @@
+name: Build Ender3 Pro Firmware
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build_and_push:
+    name: Build and push firmware
+    runs-on: ubuntu-latest
+    env:
+      BOARD: STM32F103RC_btt
+
+    steps:
+      - name: Check Repository
+        uses: actions/checkout@v2
+
+      - name: Get the version
+        id: version
+        run: echo ::set-output name=VERSION::${GITHUB_REF#refs/tags/}
+
+      - name: Compile Firmware
+        run: |
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -e ${{ steps.version.outputs.VERSION }}
+            -v $(pwd)/.pio/build:/home/platformio/build \
+            -v $(pwd)/Marlin:/home/platformio/CustomConfiguration \
+            frealmyr/marlin-build:latest
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            .pio/build/BOARD/firmware.bin
+            .pio/build/BOARD/firmware.md5
