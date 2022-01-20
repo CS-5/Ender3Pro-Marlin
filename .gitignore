@@ -41,7 +41,6 @@ applet/
 *.rej
 *.bak
 *.idea
-*.s
 *.i
 *.ii
 *.swp
@@ -145,6 +144,8 @@ vc-fileutils.settings
 .vscode/c_cpp_properties.json
 .vscode/launch.json
 .vscode/*.db
+.vscode/*
+!.vscode/extensions.json
 
 #Simulation
 imgui.ini
