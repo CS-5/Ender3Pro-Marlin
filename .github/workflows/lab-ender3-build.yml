@@ -25,7 +25,8 @@ jobs:
           docker run \
             -u root:root \
             -e BOARD \
-            -e USE_LATEST=true \
+            -e USE_LATEST=false \
+            -e USE_BRANCH=2.0.x \
             -v $(pwd)/.pio/build:/home/platformio/build \
             -v $(pwd)/Marlin:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
